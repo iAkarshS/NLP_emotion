@@ -4,7 +4,7 @@ import streamlit as st
 import webbrowser
 global Lrdetect_Model
 
-Lrdetect_Model=open('model.pckl','rb')
+Lrdetect_Model=open('testmodel.pckl','rb')
 Lrdetect_Model=pickle.load(Lrdetect_Model)
 
 st.title("Emotion detection")
