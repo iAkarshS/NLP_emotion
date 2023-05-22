@@ -17,5 +17,5 @@ jobs:
           fetch-depth: 0
       - name: Push to hub
         env:
-          emotion-app: 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
-        run: git push --force https://AkarshS:$emotion-app@huggingface.co/spaces/AkarshS/emotion-app main
+           HG: ${{ secrets.HG }}
+        run: git push --force https://AkarshS:$HG@huggingface.co/spaces/AkarshS/emotion-app main
